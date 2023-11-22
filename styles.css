@@ -20,6 +20,14 @@ header {
     padding: 2rem;
 }
 
+/* Styles for the profile photo */
+img {
+    max-width: 150px; /* Adjust the width as needed */
+    border-radius: 50%; /* Makes the photo circular */
+    display: block;
+    margin: 0 auto; /* Centers the photo horizontally */
+}
+
 h1 {
     font-size: 2rem;
     margin-bottom: 0.5rem;
