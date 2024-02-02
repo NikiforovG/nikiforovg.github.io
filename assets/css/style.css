@@ -506,6 +506,28 @@ main {
 
 .about-text p { margin-bottom: 15px; }
 
+.about-text ul {
+    padding-left: 15px;
+    margin-left: 0;
+}
+
+.about-text li {
+    position: relative;
+    padding-left: 20px; /* Adjust as needed */
+}
+
+.about-text li::before {
+    content: ''; /* Necessary for a pseudo-element */
+    position: absolute;
+    left: 0; /* Adjust as needed */
+    top: 50%; /* Adjust for vertical alignment */
+    transform: translateY(-50%); /* Center align vertically */
+    height: 7px; /* Size of the circle */
+    width: 7px; /* Size of the circle */
+    background-color: var(--orange-yellow-crayola); /* Your specified color */
+    border-radius: 50%; /* Makes it a circle */
+}
+
 
 
 /**
