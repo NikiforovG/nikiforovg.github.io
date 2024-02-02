@@ -722,7 +722,7 @@ main {
 }
 
 .button-container {
-    text-align: center;
+  text-align: center;
 }
 
 .cv-download-button {
@@ -1144,6 +1144,16 @@ main {
 
   .about-text {
     margin-bottom: 40px;
+  }
+
+  .about-text a {
+    color: var(--orange); /* Replace with the color you want */
+    text-decoration: none; /* Removes underline from links */
+    display: inline; /* Prevents starting on a new line */
+  }
+
+  .about-text a:hover {
+    text-decoration: underline; /* Adds underline on hover for better UX */
   }
 
   /* service */
