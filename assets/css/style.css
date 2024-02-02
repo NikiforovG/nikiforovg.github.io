@@ -61,6 +61,7 @@
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
   --orange-yellow-crayola: hsl(45, 100%, 72%);
+  --orange: hsl(35, 100%, 68%);
   --vegas-gold: hsl(45, 54%, 58%);
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
@@ -720,6 +721,26 @@ main {
   border-radius: 50%; /* Makes it a circle */
 }
 
+.button-container {
+    text-align: center;
+}
+
+.cv-download-button {
+  display: inline-block;
+  background-color: var(--orange);
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 0 auto;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.cv-download-button:hover {
+  background-color: var(--orange-yellow-crayola);
+}
 
 /**
  * skills 
