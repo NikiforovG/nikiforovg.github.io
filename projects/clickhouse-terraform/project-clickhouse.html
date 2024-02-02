@@ -43,6 +43,8 @@
 
         <p class="title">DevOps</p>
 
+        <div class="separator"></div>
+
         <ul class="social-list">
 
           <li class="social-item">
@@ -73,6 +75,19 @@
           up an additional persistent SSD, specifically for data storage, and configures the network to allow traffic
           through the ClickHouse port. Additionally, I assigned a static IP to the VM for consistent access.
         </p>
+
+        <h3 class="h3"> Project's README (Auto-parsed)</h3>
+
+        <div id="markdownContent"></div>
+        <script>
+            var converter = new showdown.Converter();
+            fetch('./README.md')
+                .then(response => response.text())
+                .then(text => {
+                    var html = converter.makeHtml(text);
+                    document.getElementById('markdownContent').innerHTML = html;
+                });
+        </script>
       </section>
     </article>
   </div>

@@ -3,11 +3,6 @@
 \*-----------------------------------*/
 
 
-/**
- * copyright 2022 @codewithsadee
- */
-
-
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
@@ -458,7 +453,7 @@ main {
   justify-content: flex-start;
   align-items: center;
   gap: 15px;
-  padding-bottom: 4px;
+  padding-bottom: 0px;
   padding-left: 0px;
 }
 
@@ -549,8 +544,7 @@ main {
   content: ''; /* Necessary for a pseudo-element */
   position: absolute;
   left: 0; /* Adjust as needed */
-  top: 50%; /* Adjust for vertical alignment */
-  transform: translateY(-50%); /* Center align vertically */
+  top: 0.55em; /* Adjust for vertical alignment */
   height: 7px; /* Size of the circle */
   width: 7px; /* Size of the circle */
   background-color: var(--orange-yellow-crayola); /* Your specified color */
@@ -1479,6 +1473,7 @@ main {
 
   .contacts-list {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .contact-info :is(.contact-link) {
