@@ -34,19 +34,18 @@
     <div class="sidebar-info">
 
       <figure class="avatar-box">
-        <img src="project-clickhouse.png" alt="project icon" width="90">
+        <img src="static/first_results_uncond.gif" alt="project icon" width="90">
       </figure>
 
       <div class="info-content">
-        <h1 class="name" title="Clickhouse Deployment In GCP Using Terraform">Clickhouse Deployment In GCP Using
-          Terraform.</h1>
+        <h1 class="name" title="Study Principles of Diffusion Models.">Study Principles of Diffusion Models</h1>
 
-        <p class="title">DevOps</p>
+        <p class="title">DL</p>
 
         <ul class="social-list">
 
           <li class="social-item">
-            <a href="#" class="social-link">
+            <a href="https://github.com/NikiforovG/diffusion-models-basics" class="social-link">
               <ion-icon name="logo-github"></ion-icon>
             </a>
           </li>
@@ -74,6 +73,19 @@
           image quality assessment, dynamic pricing, demand forecasting, and Reinforcement Learning based
           routing.
         </p>
+
+        <h3 class="h3"> Project's README</h3>
+
+        <div id="markdownContent"></div>
+        <script>
+            var converter = new showdown.Converter();
+            fetch('./README.md')
+                .then(response => response.text())
+                .then(text => {
+                    var html = converter.makeHtml(text);
+                    document.getElementById('markdownContent').innerHTML = html;
+                });
+        </script>
       </section>
     </article>
   </div>
