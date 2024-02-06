@@ -1,87 +1,712 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Gleb Nikiforov</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <img src="static/profile.jpeg" alt="Gleb Nikiforov" />
-        <h1>Gleb Nikiforov</h1>
-        <p>Data Scientist | Machine Learning Engineer</p>
-    </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Write a brief introduction about yourself here.</p>
-    </section>
+<!--
+  - #MAIN
+-->
 
-    <section id="experience">
-        <h2>Experience</h2>
+<main>
+
+  <!--
+    - #SIDEBAR
+  -->
+
+  <aside class="sidebar" data-sidebar>
+
+    <div class="sidebar-info">
+
+      <figure class="avatar-box">
+<!--        <img src="./assets/images/my-avatar.png" alt="Gleb Nikiforov" width="80">-->
+        <!--        <img src="./assets/images/profile.jpeg" alt="Gleb Nikiforov" width="80">-->
+      </figure>
+
+      <div class="info-content">
+        <h1 class="name" title="Gleb Nikiforov">Gleb Nikiforov</h1>
+
+        <p class="title">Data Scientist</p>
+      </div>
+
+      <button class="info_more-btn" data-sidebar-btn>
+        <span>Show Contacts</span>
+
+        <ion-icon name="chevron-down"></ion-icon>
+      </button>
+
+    </div>
+
+    <div class="sidebar-info_more">
+
+      <div class="separator"></div>
+
+      <ul class="contacts-list">
+
+        <li class="contact-item">
+
+          <div class="icon-box">
+            <ion-icon name="mail-outline"></ion-icon>
+          </div>
+
+          <div class="contact-info">
+            <p class="contact-title">Email</p>
+
+            <a href="mailto:nikiforovg1996@gmail.com" class="contact-link">nikiforovg1996@gmail.com</a>
+          </div>
+
+        </li>
+
+        <li class="contact-item">
+
+          <div class="icon-box">
+            <ion-icon name="phone-portrait-outline"></ion-icon>
+          </div>
+
+          <div class="contact-info">
+            <p class="contact-title">Phone</p>
+
+            <a href="tel:+31645570225" class="contact-link">+31 6 45570225</a>
+          </div>
+
+        </li>
+
+        <li class="contact-item">
+
+          <div class="icon-box">
+            <ion-icon name="calendar-outline"></ion-icon>
+          </div>
+
+          <div class="contact-info">
+            <p class="contact-title">Birthday</p>
+
+            <time datetime="1996-11-13">November 13, 1996</time>
+          </div>
+
+        </li>
+
+        <li class="contact-item">
+
+          <div class="icon-box">
+            <ion-icon name="location-outline"></ion-icon>
+          </div>
+
+          <div class="contact-info">
+            <p class="contact-title">Location</p>
+
+            <address>Amsterdam, NL</address>
+          </div>
+
+        </li>
+
+      </ul>
+
+      <div class="separator"></div>
+
+      <ul class="social-list">
+
+        <li class="social-item">
+          <a href="https://github.com/NikiforovG" class="social-link">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+        </li>
+
+        <li class="social-item">
+          <a href="https://www.linkedin.com/in/gleb-nikiforov/" class="social-link">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+
+        <li class="social-item">
+          <a href="https://www.instagram.com/gleb_nikif" class="social-link">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </aside>
+
+
+  <!--
+    - #main-content
+  -->
+
+  <div class="main-content">
+
+    <!--
+      - #NAVBAR
+    -->
+
+    <nav class="navbar">
+
+      <ul class="navbar-list">
+
+        <li class="navbar-item">
+          <button class="navbar-link  active" data-nav-link>About</button>
+        </li>
+
+        <li class="navbar-item">
+          <button class="navbar-link" data-nav-link>Resume</button>
+        </li>
+
+        <li class="navbar-item">
+          <button class="navbar-link" data-nav-link>Portfolio</button>
+        </li>
+
+      </ul>
+
+    </nav>
+
+
+    <!--
+      - #ABOUT
+    -->
+
+    <article class="about  active" data-page="about">
+
+      <header>
+        <h2 class="h2 article-title">About me</h2>
+      </header>
+
+      <section class="about-text">
+        <p>
+          As a Data Scientist, I have engaged in various projects across different domains of Machine
+          Learning,
+          including Computer Vision, Natural Language Processing, Reinforcement Learning,
+          and classic (tabular) Machine Learning. My projects have encompassed, but are not limited to,
+          image quality assessment, dynamic pricing, demand forecasting, and Reinforcement Learning based
+          routing.
+        </p>
+
+        <h3>Tech Stack:</h3>
         <ul>
-            <li>
-                <h3>Job Title 1</h3>
-                <p>Company Name 1 - Location</p>
-                <p>Date Range 1</p>
-                <p>Job description and responsibilities.</p>
-            </li>
-            <li>
-                <h3>Job Title 2</h3>
-                <p>Company Name 2 - Location</p>
-                <p>Date Range 2</p>
-                <p>Job description and responsibilities.</p>
-            </li>
+          <li><strong>Programming Languages:</strong> Python (advanced), C++ (intermediate)</li>
+          <li><strong>Machine Learning:</strong> Scikit-learn, LightGBM, CatBoost, fbprophet</li>
+          <li><strong>Deep Learning:</strong> PyTorch, TensorFlow</li>
+          <li><strong>Visualization:</strong> Streamlit, Plotly, Seaborn, Matplotlib</li>
+          <li><strong>Deployment:</strong> Docker, Kubernetes, Airflow, FastAPI</li>
+          <li><strong>Data Manipulations:</strong> SQL, Clickhouse (in-depth)</li>
+          <li><strong>DevOps:</strong> Terraform, Google Cloud</li>
         </ul>
-    </section>
 
-    <section id="education">
-        <h2>Education</h2>
-        <ul>
-            <li>
-                <h3>Degree 1</h3>
-                <p>School/University Name 1 - Location</p>
-                <p>Graduation Year 1</p>
-            </li>
-            <li>
-                <h3>Degree 2</h3>
-                <p>School/University Name 2 - Location</p>
-                <p>Graduation Year 2</p>
-            </li>
+        <p/>
+
+        <p>
+          I hold a Master's degree with distinction from the Faculty of Mathematics and Mechanics
+          at Saint Petersburg State University.
+        </p>
+      </section>
+
+
+      <!--
+        - service
+      -->
+
+      <section class="service">
+
+        <h3 class="h3 service-title">What I do</h3>
+
+        <ul class="service-list">
+
+          <li class="service-item">
+
+            <div class="service-icon-box">
+              <img src="assets/images/icon-communication.svg
+                " alt="communication icon" width="50">
+            </div>
+
+            <div class="service-content-box">
+              <h4 class="h4 service-item-title">Understand business needs</h4>
+
+              <p class="service-item-text">
+                Engage with stakeholders to define project objectives.
+                Translate business requirements into actionable data-driven strategies.
+              </p>
+            </div>
+
+          </li>
+
+          <li class="service-item">
+
+            <div class="service-icon-box">
+              <img src="assets/images/icon-laptop.svg" alt="laptop icon" width="50">
+            </div>
+
+            <div class="service-content-box">
+              <h4 class="h4 service-item-title">Develop ML Solution</h4>
+
+              <p class="service-item-text">
+                Experiment with diverse ML approaches to find the best fit for project requirements.
+                Implement and refine chosen solutions, ensuring optimal performance and scalability.
+              </p>
+            </div>
+
+          </li>
+
+          <li class="service-item">
+
+            <div class="service-icon-box">
+              <img src="assets/images/icon-server.svg" alt="server icon" width="50">
+            </div>
+
+            <div class="service-content-box">
+              <h4 class="h4 service-item-title">Deploy Solution</h4>
+
+              <p class="service-item-text">
+                Utilize Docker and Kubernetes for efficient deployment.
+                Integrate models into production with robust scalability.
+              </p>
+            </div>
+
+          </li>
+
+          <li class="service-item">
+
+            <div class="service-icon-box">
+              <img src="assets/images/icon-magnifier.svg" alt="magnifier icon" width="50">
+            </div>
+
+            <div class="service-content-box">
+              <h4 class="h4 service-item-title">Set up monitoring</h4>
+
+              <p class="service-item-text">
+                Implement monitoring systems for model performance.
+                Establish automated pipelines for continuous data analysis and model retraining.
+              </p>
+            </div>
+
+          </li>
+
         </ul>
-    </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Web Design</li>
-            <li>Responsive Design</li>
+      </section>
+
+
+      <!--
+        - service
+      -->
+
+      <section class="skill">
+
+        <h3 class="h3 skills-title">My skills</h3>
+
+        <ul class="skills-list content-card">
+
+          <li class="skills-item">
+
+            <div class="title-wrapper">
+              <h5 class="h5">Python</h5>
+              <data value="90">90%</data>
+            </div>
+
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 90%;"></div>
+            </div>
+
+          </li>
+
+          <li class="skills-item">
+
+            <div class="title-wrapper">
+              <h5 class="h5">Machine Learning</h5>
+              <data value="90">90%</data>
+            </div>
+
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 90%;"></div>
+            </div>
+
+          </li>
+
+          <li class="skills-item">
+
+            <div class="title-wrapper">
+              <h5 class="h5">Deep Learning</h5>
+              <data value="80">80%</data>
+            </div>
+
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 80%;"></div>
+            </div>
+
+          </li>
+
+          <li class="skills-item">
+
+            <div class="title-wrapper">
+              <h5 class="h5">SQL</h5>
+              <data value="70">70%</data>
+            </div>
+
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 70%;"></div>
+            </div>
+
+          </li>
+
+          <li class="skills-item">
+
+            <div class="title-wrapper">
+              <h5 class="h5">Docker + Kubernetes</h5>
+              <data value="60">60%</data>
+            </div>
+
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 60%;"></div>
+            </div>
+
+          </li>
+
+          <li class="skills-item">
+
+            <div class="title-wrapper">
+              <h5 class="h5">DevOps</h5>
+              <data value="40">40%</data>
+            </div>
+
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 40%;"></div>
+            </div>
+
+          </li>
+
         </ul>
-    </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>
-                <h3>Project Title 1</h3>
-                <p>Project description and details.</p>
-            </li>
-            <li>
-                <h3>Project Title 2</h3>
-                <p>Project description and details.</p>
-            </li>
+      </section>
+
+
+      <!--
+        - modal
+      -->
+
+      <div class="modal-container" data-modal-container>
+
+        <div class="overlay" data-overlay></div>
+
+        <section class="testimonials-modal">
+
+          <button class="modal-close-btn" data-modal-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+        </section>
+
+      </div>
+
+    </article>
+
+
+    <!--
+      - #RESUME
+    -->
+
+    <article class="resume" data-page="resume">
+
+      <header>
+        <h2 class="h2 article-title">Resume</h2>
+      </header>
+
+      <section class="timeline">
+
+        <div class="title-wrapper">
+          <div class="icon-box">
+            <ion-icon name="briefcase-outline"></ion-icon>
+          </div>
+
+          <h3 class="h3">Experience</h3>
+        </div>
+
+        <ol class="timeline-list">
+
+          <li class="timeline-item">
+
+            <h4 class="h4 timeline-item-title">Data Scientist</h4>
+            <h5 class="h5 timeline-item-title">Semrush</h5>
+
+            <span>Jul 2021 — Present</span>
+            <p><i class="timeline-text">Amsterdam, Netherlands</i></p>
+
+            <p class="timeline-text">
+              At Semrush, I am proud to be a part of the product team within the Innovation Hub,
+              where our primary focus is developing cutting-edge products to uncover new growth opportunities
+              for the company. As a Data Scientist within this dynamic team, my responsibilities include
+              implementing product features that leverage the power of machine learning models.
+            </p>
+
+            <p class="timeline-text">
+              My role spans various domains of data science, including:
+            </p>
+            <ul class="timeline-text">
+              <li>Classic Machine Learning: for instance, CTR prediction.</li>
+              <li>Computer Vision: for instance, image quality assessment.</li>
+              <li>Natural Language Processing (NLP): for instance, generating product descriptions and alt texts
+                for images.
+              </li>
+            </ul>
+
+          </li>
+
+          <li class="timeline-item">
+
+            <h4 class="h4 timeline-item-title">Data Scientist</h4>
+            <h5 class="h5 timeline-item-title">Gazprom Neft</h5>
+
+            <span>Dec 2019 — Jul 2021</span>
+            <i class="timeline-text">Saint Petersburg, Russia</i>
+
+            <p class="timeline-text">
+              As a Data Scientist, I had the privilege to work on a range of impactful projects:
+            </p>
+            <ul class="timeline-text">
+              <li>
+                Dynamic Pricing: I contributed to developing and implementing dynamic pricing strategies,
+                leveraging advanced data analytics and machine learning techniques. One of the critical challenges
+                in this project was to measure the actual financial impact accurately, ensuring that the implemented
+                pricing strategies delivered tangible results.
+              </li>
+
+              <li>
+                Operating Expenses Prediction: I developed a model for predicting operating expenses. One of the key
+                challenges I encountered was balancing accuracy with interpretability, ensuring stakeholders could
+                easily understand and trust the model's outputs.
+              </li>
+
+              <li>
+                Sales Forecasting: I was responsible for developing robust sales forecasting models that accurately
+                predicted sales trends, even when dealing with tens of thousands of time series simultaneously.
+                This complex task required an efficient solution to handle large-scale time series data.
+              </li>
+
+              <li>
+                Intern Mentorship: Beyond project work, I took on the responsibility of mentoring and guiding interns.
+                This experience reinforced my commitment to knowledge sharing and fostering the growth of emerging
+                talent within the organization.
+              </li>
+            </ul>
+
+          </li>
+
+          <li class="timeline-item">
+
+            <h4 class="h4 timeline-item-title">Mathematics/Physics Tutor</h4>
+
+            <span>Sep 2017 — Jun 2019</span>
+            <i class="timeline-text">Saint Petersburg, Russia</i>
+
+          </li>
+
+          <li class="timeline-item">
+
+            <h4 class="h4 timeline-item-title">Junior Researcher</h4>
+            <h5 class="h5 timeline-item-title">Saint Petersburg State University</h5>
+
+            <span>Apr 2018 — Dec 2018</span>
+            <i class="timeline-text">Saint Petersburg, Russia</i>
+
+          </li>
+
+        </ol>
+
+      </section>
+
+      <section class="timeline">
+
+        <div class="title-wrapper">
+          <div class="icon-box">
+            <ion-icon name="book-outline"></ion-icon>
+          </div>
+
+          <h3 class="h3">Education</h3>
+        </div>
+
+        <ol class="timeline-list">
+
+          <li class="timeline-item">
+
+            <h4 class="h4 timeline-item-title">Saint Petersburg State University</h4>
+            <h5 class="h5 timeline-item-title">Faculty of Mathematics and Mechanics</h5>
+
+            <span>2015 — 2020</span>
+
+            <p class="timeline-text">
+              Master's degree with distinction in Fundamental Mathematics and Mechanics.
+            </p>
+
+          </li>
+
+        </ol>
+
+      </section>
+
+      <section class="download-cv">
+        <div class="button-container">
+          <a href="assets/other/Resume-Gleb-Nikiforov.pdf" download class="cv-download-button">
+            Download Resume
+          </a>
+        </div>
+      </section>
+
+    </article>
+
+
+    <!--
+      - #PORTFOLIO
+    -->
+
+    <article class="portfolio" data-page="portfolio">
+
+      <header>
+        <h2 class="h2 article-title">Portfolio</h2>
+      </header>
+
+      <section class="projects">
+
+        <p class="timeline-text"><strong>Work in progress!</strong></p>
+        <p class="timeline-text">This section is currently under development.</p>
+        <p class="timeline-text">I'll soon be sharing more of my personal projects here, so stay tuned!</p>
+        <div class="separator"></div>
+
+        <ul class="filter-list">
+
+          <li class="filter-item">
+            <button class="active" data-filter-btn>All</button>
+          </li>
+
+          <li class="filter-item">
+            <button data-filter-btn>ML</button>
+          </li>
+
+          <li class="filter-item">
+            <button data-filter-btn>DL</button>
+          </li>
+
+          <li class="filter-item">
+            <button data-filter-btn>DevOps</button>
+          </li>
+
         </ul>
-    </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: your.email@example.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/your-profile">Your LinkedIn Profile</a></p>
-        <p>GitHub: <a href="https://github.com/yourusername">Your GitHub Profile</a></p>
-    </section>
+        <div class="filter-select-box">
+
+          <button class="filter-select" data-select>
+
+            <div class="select-value" data-selecct-value>Select category</div>
+
+            <div class="select-icon">
+              <ion-icon name="chevron-down"></ion-icon>
+            </div>
+
+          </button>
+
+          <ul class="select-list">
+
+            <li class="select-item">
+              <button data-select-item>All</button>
+            </li>
+
+            <li class="select-item">
+              <button data-select-item>ML</button>
+            </li>
+
+            <li class="select-item">
+              <button data-select-item>DL</button>
+            </li>
+
+            <li class="select-item">
+              <button data-select-item>DevOps</button>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="project-list">
+
+          <li class="project-item  active" data-filter-item data-category="dl">
+            <a href="projects/diffusion-models-basics/project-diffusion.html">
+
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+
+                <img src="projects/diffusion-models-basics/static/first_results_uncond.gif" alt="project icon"
+                     loading="lazy">
+              </figure>
+
+              <h3 class="project-title">Study Principles of Diffusion Models.</h3>
+              <i class="project-category">Dec 2023 - Present</i>
+              <p class="project-category">DL</p>
+
+            </a>
+          </li>
+
+          <li class="project-item  active" data-filter-item data-category="devops">
+            <a href="projects/clickhouse-terraform/project-clickhouse.html">
+
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+
+                <img src="projects/clickhouse-terraform/project-clickhouse.png" alt="project icon" loading="lazy">
+              </figure>
+
+              <h3 class="project-title">Clickhouse Deployment In GCP Using Terraform.</h3>
+              <i class="project-category">Feb 2024</i>
+              <p class="project-category">DevOps</p>
+
+            </a>
+          </li>
+
+        </ul>
+
+      </section>
+
+    </article>
+
+  </div>
+
+</main>
+
+
+<!--
+  - custom js link
+-->
+<script src="./assets/js/script.js"></script>
+
+<!--
+  - ionicon link
+-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
